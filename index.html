@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To My 7 Minutes ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Supabase JavaScript library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">to my 7 minutes <span>♡</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#memories">Our memories</a>
+      <a href="#about">Our little story</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-heart">♡</div>
+      <p class="eyebrow">A LITTLE CORNER OF THE INTERNET, JUST FOR US</p>
+      <h1>Every minute with you<br><em>is my favourite.</em></h1>
+      <p class="hero-copy">A place for our pictures, tiny notes, and all the moments we never want to forget.</p>
+      <a class="primary-link" href="#memories">Open our memories <span>→</span></a>
+      <div class="hero-note">made with love, for us ♡</div>
+    </section>
+
+    <section class="section" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow">OUR LITTLE TIME CAPSULE</p>
+        <h2>Moments we'll keep forever</h2>
+        <p>Every picture has a story. Every story has us.</p>
+      </div>
+
+      <section class="auth-card" id="authCard">
+        <div>
+          <p class="eyebrow">OUR PRIVATE SPACE</p>
+          <h3 id="authTitle">Welcome back ♡</h3>
+          <p class="muted" id="authDescription">Log in to see and add your memories.</p>
+        </div>
+        <form id="authForm">
+          <label for="email">Email address</label>
+          <input id="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <label for="password">Password</label>
+          <input id="password" type="password" autocomplete="current-password" minlength="6" placeholder="At least 6 characters" required>
+          <button class="button" id="authSubmit" type="submit">Log in</button>
+          <button class="text-button" id="toggleAuth" type="button">Create your shared account</button>
+        </form>
+        <p class="form-message" id="authMessage" role="status"></p>
+      </section>
+
+      <div id="privateArea" class="hidden">
+        <div class="signed-in-row">
+          <p class="muted" id="signedInAs"></p>
+          <button class="text-button" id="logoutButton" type="button">Log out</button>
+        </div>
+
+        <form class="upload-card" id="uploadForm">
+          <div>
+            <p class="eyebrow">ADD TO THE SCRAPBOOK</p>
+            <h3>A new little memory ♡</h3>
+          </div>
+          <label for="photoInput">Choose a photo</label>
+          <input id="photoInput" type="file" accept="image/jpeg,image/png,image/webp,image/gif" required>
+          <label for="photoCaption">A little caption</label>
+          <input id="photoCaption" type="text" maxlength="120" placeholder="That day we couldn't stop laughing...">
+          <label for="photoDate">When was it?</label>
+          <input id="photoDate" type="date">
+          <button class="button" id="uploadButton" type="submit">Add to our scrapbook +</button>
+          <p class="form-message" id="uploadMessage" role="status"></p>
+        </form>
+
+        <div class="gallery-toolbar">
+          <h3>Our photo memories</h3>
+          <button class="text-button" id="refreshButton" type="button">Refresh memories ↻</button>
+        </div>
+        <div id="photoGallery" class="photo-gallery">
+          <p class="empty-state">Our first memory is waiting to be added. ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="about">
+      <p class="eyebrow">A NOTE TO US</p>
+      <h2>Our story is still being written.</h2>
+      <p>One photo, one silly joke, one ordinary day at a time. Here's to all the memories still waiting for us.</p>
+      <div class="story-flourish">♡ &nbsp; ♡ &nbsp; ♡</div>
+    </section>
+  </main>
+
+  <footer>made with all my love ♡</footer>
+</body>
+</html>
