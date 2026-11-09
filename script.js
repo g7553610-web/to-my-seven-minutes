@@ -2,7 +2,7 @@
   Supabase configuration
 */
 
-const SUPABASE_URL = "PASTE_YOUR_SUPABASE_PROJECT_URL_HERE";
+const SUPABASE_URL = "htoqvxvvbvatblcxyfiz";
 const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_vltjatKECGVH4pQjw6HkkA_4DJdfi_p";
 const BUCKET_NAME = "LOVESTORY";
 
